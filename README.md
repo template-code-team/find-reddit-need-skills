@@ -18,6 +18,23 @@
     *   **输出**：自动保存到 `find-need-skills/reddit_result/` 目录下，文件格式为 `result-YY-MM-DD.md`。
     *   **内容**：包含需求标题、目标用户、Reddit 证据句、页面大纲、SEO 关键词、变现建议。
 
+## 如何导入与使用 (Installation & Usage)
+
+### 1. 导入技能到 AI (OpenClaw / Antigravity / Claude Code)
+AI Agent (如 Antigravity) 会自动识别项目根目录下的技能文件夹。你只需要确保：
+- 技能文件夹内包含 `SKILL.md` 文件。
+- 整个 `find-need-skills` 文件夹在 AI 的工作上下文（Workspace）中。
+
+### 2. 分别使用技能
+你可以根据需要，单独调用其中一个技能，或者让 AI 组合使用：
+
+*   **单独搜索 (Search Only)**:
+    > "请使用 `reddit_search` 帮我搜索 Reddit 上关于 'Cursor AI alternatives' 的最新讨论。"
+*   **单独提取 (Extract Only)**:
+    > "我有一段 Reddit 评论，请使用 `reddit_extract` 帮我分析其中的痛点和购买意图：[粘贴内容]"
+*   **单独聚类 (Cluster Only)**:
+    > "我这里有一堆零散的需求点，请使用 `reddit_cluster` 帮我整理成可落地的选题卡片：[粘贴列表]"
+
 ## 推荐操作流程 (Workflow)
 
 你可以直接命令 AI（OpenClaw / Antigravity / Claude Code）：
