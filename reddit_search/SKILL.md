@@ -19,21 +19,7 @@ Since the Reddit API often blocks automated requests (429/403 errors), the most 
 2.  **Execute Search**: Use the `search_web` tool with this query.
 3.  **Parse Results**: Extract post titles, URLs, and summaries from the search results.
 
-**Method 2: Python Script (Fallback)**
 
-Only use this if you have a valid proxy or if Web Search is unavailable.
-
-Run the search script located in `scripts/search.py` using Python.
-
-### Arguments:
-1. `keyword`: The search term or root word.
-2. `subreddits`: Optional. Comma-separated list of subreddits (e.g., "saas,indiehackers").
-3. `time_range`: Optional. "hour", "day", "week", "month", "year", or "all". Default is "month".
-
-### Example Command:
-```bash
-python3 scripts/search.py "alternatives to notion" "productivity,notion" "month"
-```
 
 ## Output Format
 The output should be a list of posts containing:
